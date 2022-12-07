@@ -7,23 +7,20 @@
     <title>JavaScript</title>
     <style>
         body{
-            background-color: rgb(105, 105, 173);
-            color: white;
+            background-color: rgb(110, 110, 233);
+            color: rgb(251, 255, 0);
             font: normal 20pt Arial;
         }
-        h1 {
+        h2 {
             color: rgb(255, 212, 22);
+            font-size: 5rem;
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Tchau maldição!</p>
     <script>
-        var n2 = Number(window.prompt('Digite um número: '));
-        var n1 = Number(window.prompt('Digite outro número: '));
-        var s = n1 + n2;
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+        var nome = window.prompt('Qual é seu nome?');
+        document.write(`<h2>Seu nome tem ${nome.length} letras e é ${nome.toUpperCase()}.<\h2>`)
     </script>
     
 </body>
